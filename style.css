@@ -45,16 +45,38 @@ body *{
     border-radius: 50%;
     position: absolute;
     padding: 8px;
-}
-
-.switch button:hover{
-    background-color: var(--social-links-hover);
-    transition: 0.3s ease-in;
-    cursor: pointer;
+    left: 0;
+    animation: smooth-slide-out 0.5s;
 }
 
 .light .switch button{
-    right: 0;
+    animation: smooth-slide-in 0.5s forwards;
+}
+
+@keyframes smooth-slide-in{
+    from{
+        left: 0;
+    }
+
+    to{
+        left: 50%;
+    }
+}
+
+@keyframes smooth-slide-out{
+    from{
+        left: 50%;
+    }
+
+    to{
+        left: 0;
+    }
+}
+
+.switch button:hover{
+    outline: 8px solid var(--social-links-hover);
+    transition: 0.3s ease-in;
+    cursor: pointer;
 }
 
 .switch span{
