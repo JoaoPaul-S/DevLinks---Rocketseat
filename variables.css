@@ -1,0 +1,19 @@
+:root{
+    --bg-url: url(assets/assets/bg-desktop.jpg);
+    --bg-switch-url: url(assets/assets/moon-stars.svg);
+    --font-color: white;
+    --buttons-bg-color-dm: #FFFFFF10;
+    --buttons-bg-color-dm-hover: #FFFFFF05;
+    --buttons-stroke-color-dm: #FFFFFF50;
+    --social-links-hover: #FFFFFF20;
+}
+
+.light{
+    --bg-url: url(assets/assets/bg-desktop-light.jpg);
+    --bg-switch-url: url(assets/assets/sun.svg);
+    --font-color: black;
+    --buttons-bg-color-dm: #00000005;
+    --buttons-bg-color-dm-hover: #00000002;
+    --buttons-stroke-color-dm: #00000050;
+    --social-links-hover: #00000010;
+}

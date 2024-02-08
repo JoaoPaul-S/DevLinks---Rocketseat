@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    background: var(--bg-url) no-repeat;
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+}
+
+body *{
+    color: var(--font-color);
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 588px;
+    margin: 56px auto;
+    padding: 24px;
+}
+
+/* PROFILE */
+
+.profile{
+    padding: 24px;
+}
+
+.profile img{
+    width: 112px;
+    height: 112px;
+    margin-bottom: 8px;
+}
+/* SWITCH */
+.switch{
+    width: 64px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.switch button{
+    width: 32px;
+    height: 32px;
+    background: white var(--bg-switch-url) center no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    padding: 8px;
+}
+
+.switch button:hover{
+    background-color: var(--social-links-hover);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.light .switch button{
+    right: 0;
+}
+
+.switch span{
+    display: block;
+    width: 64px;
+    height: 24px;
+    background-color: var(--buttons-bg-color-dm);
+    border: 1px solid var(--buttons-stroke-color-dm);
+    border-radius: 500px;
+}
+
+/* LINKS */
+
+.links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0px;
+}
+
+.links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    background-color: var(--buttons-bg-color-dm);
+    border: 1px solid var(--buttons-stroke-color-dm);
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.links a:hover{
+    background-color: var(--buttons-bg-color-dm-hover);
+    border: 1.5px solid var(--font-color);
+    transition: 0.3s ease-in;
+}
+
+/*SOCIAL-MEDIA*/
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px;
+    font-size: 24px;
+}
+
+.social-media ion-icon{
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.social-media ion-icon:hover{
+    background-color: var(--social-links-hover);
+    transition: 0.3s ease-in;
+}
+
+/* FOOTER */
+
+.atribuition{
+    padding: 24px;
+    font-size: 14px;
+}
+
+.atribuition a{
+    text-decoration: underline;
+}
