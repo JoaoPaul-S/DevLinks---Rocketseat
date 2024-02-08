@@ -17,3 +17,13 @@
     --buttons-stroke-color-dm: #00000050;
     --social-links-hover: #00000010;
 }
+
+@media(max-width: 430px){
+    :root{
+        --bg-url: url(assets/assets/bg-mobile.jpg);
+    }
+
+    .light{
+        --bg-url: url(assets/assets/bg-mobile-light.jpg);
+    }
+}
